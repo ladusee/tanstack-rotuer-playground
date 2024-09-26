@@ -1,13 +1,12 @@
 import { MainLayout } from "./layouts/main";
+import { AppRouter } from "./router";
 
 function App() {
-	return (
-		<MainLayout>
-			<h1 className="text-3xl font-bold underline text-center">
-				Hello world!
-			</h1>
-		</MainLayout>
-	);
+  return (
+    <MainLayout>
+      <AppRouter />
+    </MainLayout>
+  );
 }
 
 export { App };
