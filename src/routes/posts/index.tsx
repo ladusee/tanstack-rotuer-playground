@@ -4,8 +4,8 @@ import { PostsList } from "../../pages/posts/list";
 import { getPostList } from "../../queries/posts";
 
 const postsSerchSchema = z.object({
-  _page: z.number().positive().optional().catch(1),
-  _limit: z.number().positive().optional().catch(5),
+  _page: z.number().positive().catch(1),
+  _limit: z.number().positive().catch(5),
 });
 
 export type PostsSearch = z.infer<typeof postsSerchSchema>;
